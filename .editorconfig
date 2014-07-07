@@ -1,0 +1,8 @@
+#EditorConfig.org
+
+# top-most EditorConfig File
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end

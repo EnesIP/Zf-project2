@@ -1,0 +1,8 @@
+*.php text eol=if
+*.phtml text eol=if
+*.css text eol=if
+*.html text eol=if
+*.json text eol=if
+*.md text eol=if
+*.less text eol=if
+*.scss text eol=if
