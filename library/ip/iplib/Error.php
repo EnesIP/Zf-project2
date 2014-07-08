@@ -1,5 +1,5 @@
 <?php
-
+namespace iplib; //L'autoload est créé dans le composer 
 
 class Error
 {

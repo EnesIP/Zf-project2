@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8d5cafc741041202443ee0fa39b54f47",
+    "hash": "6709b1e149e1bf38dd3dbbbf520a365e",
     "packages": [
         {
             "name": "joseph-lenton/php-error",

@@ -1,6 +1,6 @@
 <?php
 define ( 'DS', DIRECTORY_SEPARATOR );
-define ( 'APP_ENV', getenv ( 'APPLICATION_ENV' ) ?  : 'production' );
+define ( 'APP_ENV', getenv('APPLICATION_ENV') ?: 'production' );
 define ( 'ROOT_PATH', dirname ( dirname ( __DIR__ ) ) ); //Répertoire de l'application
 define ( 'SRC_PATH', ROOT_PATH . DS . 'src' );
 define ( 'PUBLIC_PATH', SRC_PATH . DS . 'public' );
@@ -8,14 +8,14 @@ define ( 'VENDOR_PATH', ROOT_PATH . DS . 'vendor' );
 define ( 'APP_PATH', SRC_PATH . DS . 'application' );
 define ( 'LIB_PATH', ROOT_PATH . DS . 'library' );
 require_once VENDOR_PATH . DS . 'autoload.php';
-require_once LIB_PATH . DS . '/ip/Error.php';
-$autoloader = Zend_Loader_Autoloader::getInstance ();
+//require_once LIB_PATH . DS . '/ip/iplib/Error.php';
+//$autoloader = Zend_Loader_Autoloader::getInstance ();
 
-if ("development" === APP_ENV) {
+if ('development' === APP_ENV) {
 \php_error\reportErrors ();
 } else {
-	set_exception_handler (array("Error", "handleException")); //Un tableau avec le nom de la classe et le nom de la méthode en paramètre
-	set_error_handler (array("Error", "handleError" ));
+	set_exception_handler (array("\iplib\Error", "handleException")); //Un tableau avec le nom de la classe et le nom de la méthode en paramètre
+	set_error_handler (array("\iplib\Error", "handleError" ));
 }
 
 // try{
