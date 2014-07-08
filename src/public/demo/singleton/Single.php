@@ -2,7 +2,7 @@
 
 class Single { //Pour ne pas avoir deux instance d'une même classe
 	
-	private static $instance; 
+	private static $_instance; 
 	
 	final private function __construct() // On évite l'implémentation de la classe
 	{

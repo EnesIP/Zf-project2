@@ -2,7 +2,8 @@
 	"name" : "Zf-ORM",
 	"version" : "0.0.1",
 	"require" : {
-		"zendframework/zendframework1" : "=1.12.7"
+		"zendframework/zendframework1" : "=1.12.7",
+		"joseph-lenton/php-error": "dev-master"
 	},
 	"repositories" : [ {
 		"type" : "composer",
