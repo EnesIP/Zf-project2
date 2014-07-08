@@ -1,1 +1,19 @@
+<?php $this->headTitle('Page d\' accueil')?> <!-- Definition du titre avec headTitle -->
+
 <h1>Index</h1>
+
+<button id="test"> Test JS </button>
+
+<script>
+	<?php $this->inlineScript()->captureStart()?>
+	$(document).ready(function(){
+		$('#test').on('click', function(){
+				alert('JS OK');
+
+		});
+	});
+		
+				
+	
+	<?php $this->inlineScript()->captureEnd()?>
+</script>
